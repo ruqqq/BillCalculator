@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="discount_types_labels">
+        <item>None (0%)</item>
+        <item>NTUC Membership (10%)</item>
+        <item>CitiBank Card (15%)</item>
+	</string-array>
+	<integer-array name="discount_types_values">
+        <item>0</item>
+        <item>10</item>
+        <item>15</item>
+	</integer-array>
+</resources>

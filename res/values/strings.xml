@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BillCalculator</string>
+    <string name="bill_information">Bill Information</string>
+    <string name="bill_amount">Bill Amount ($)</string>
+    <string name="number_of_pax">Pax</string>
+    <string name="number_of_pax_title">Number of Pax</string>
+    <string name="discount">Discount Applicable</string>
+    <string name="discount_title">Discount</string>
+    <string name="calculation_options">Calculation Options</string>
+    <string name="service_charge">Include Service Charge (10%)</string>
+    <string name="gst_charge">Include GST (7%)</string>
+    <string name="cess_charge">Include Cess (1%)</string>
+    <string name="calculate">Calculate Total Bill</string>
+    <string name="clear">Clear Input</string>
+    
+    <string name="error">Error</string>
+    <string name="error_invalid_amount">Please enter the bill amount.</string>
+    <string name="error_invalid_pax">Please enter the pax number.</string>
+    <string name="calculate_title">Total Bill</string>
+    <string name="calculate_message">Total: $%1$s\nEach pays: $%2$s</string>
+    <string name="close">Close</string>
+    
+    <string name="clear_text">Clear</string>
+    <string name="clear_message">All your inputs will be cleared. Continue?</string>
+    <string name="cancel">Cancel</string>
+</resources>

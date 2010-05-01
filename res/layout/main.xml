@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1">
+	    <LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+		    <LinearLayout
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    >
+			    <TextView android:text="@string/bill_information" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+			    <LinearLayout
+				    android:orientation="horizontal"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    >
+				    <EditText android:hint="@string/bill_amount" android:id="@+id/editBill" android:layout_weight="2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"></EditText>
+					<EditText android:hint="@string/number_of_pax" android:id="@+id/editPax" android:layout_weight="2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberSigned"></EditText>
+				</LinearLayout>
+			</LinearLayout>
+		
+			<LinearLayout
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dip"
+			    >
+				<TextView android:text="@string/discount" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+				<Spinner android:prompt="@string/discount" android:id="@+id/spinDiscount" android:layout_width="fill_parent" android:layout_height="wrap_content"></Spinner>
+			</LinearLayout>
+		
+			<LinearLayout
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dip"
+			    >
+				<TextView android:text="@string/calculation_options" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+				<CheckBox android:text="@string/service_charge" android:id="@+id/checkServiceCharge" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+				<CheckBox android:text="@string/gst_charge" android:id="@+id/checkGSTCharge" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+				<CheckBox android:text="@string/cess_charge" android:id="@+id/checkCessCharge" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/bottom_bar"
+		android:gravity="center|center_vertical"
+	>
+		<Button android:text="@string/calculate" android:id="@+id/btnCalculate" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<Button android:text="@string/clear" android:id="@+id/btnClear" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+</LinearLayout>
